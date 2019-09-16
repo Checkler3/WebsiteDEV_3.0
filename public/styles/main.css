@@ -1,0 +1,95 @@
+h1 {
+  color: #483d8b;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%);
+}
+
+hr {
+  border: 1px solid #483d8b;
+}
+
+.content {
+  position: relative;
+  top: 10rem;
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  background: #e7e7e7;
+  background: -webkit-gradient(linear, left top, right top, from(#e7e7e7), color-stop(50%, whitesmoke), to(#e9e9e9));
+  background: linear-gradient(90deg, #e7e7e7 0%, whitesmoke 50%, #e9e9e9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e7e7e7",endColorstr="#e9e9e9",GradientType=1);
+}
+
+.title {
+  padding: 20px;
+}
+
+.pagelinks {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.links {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+.pagelink {
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+.github {
+  font-size: 50px;
+}
+
+.linkedin {
+  font-size: 50px;
+}
+
+.email {
+  font-size: 50px;
+}
+
+.btn-icon {
+  -webkit-transition: color 50ms ease-in-out;
+  transition: color 50ms ease-in-out;
+  color: #999999;
+}
+
+.btn-icon:hover {
+  color: #483d8b;
+}
+
+.btn {
+  -webkit-transition: color 50ms ease-in-out;
+  transition: color 50ms ease-in-out;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover {
+  background-color: #483d8b;
+  color: white;
+}
+
+.resume {
+  background: whitesmoke;
+}
+/*# sourceMappingURL=main.css.map */
