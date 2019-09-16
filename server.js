@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const expressLayouts = require('express-ejs-layouts');
 const path = require('path');
 const indexRouter = require('./routes/index');
+const aboutRouter = require('./routes/about');
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(express.static('public'));
 // });
 
 app.use('/', indexRouter);
+app.use('/about', aboutRouter);
 
 // Start server
 const port = process.env.port || 4000;

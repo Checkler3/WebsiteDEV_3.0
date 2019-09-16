@@ -5,6 +5,7 @@ h1 {
 body {
 	height: 100vh;
 	background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%);
+	background-attachment: fixed;
 }
 
 hr {
@@ -105,6 +106,8 @@ hr {
 }
 
 .btn {
+	color: black;
+	background-color: whitesmoke;
 	transition: color 50ms ease-in-out;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
 }
@@ -116,4 +119,47 @@ hr {
 
 .resume {
 	background: whitesmoke;
+}
+
+.about-maincontent {
+	position: relative;
+	top: 10rem;
+	max-width: 800px;
+	text-align: center;
+	margin: auto;
+	padding: 20px;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	background: rgb(231, 231, 231);
+	background: -moz-linear-gradient(
+		90deg,
+		rgba(231, 231, 231, 1) 0%,
+		rgba(245, 245, 245, 1) 50%,
+		rgba(233, 233, 233, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		90deg,
+		rgba(231, 231, 231, 1) 0%,
+		rgba(245, 245, 245, 1) 50%,
+		rgba(233, 233, 233, 1) 100%
+	);
+	background: linear-gradient(
+		90deg,
+		rgba(231, 231, 231, 1) 0%,
+		rgba(245, 245, 245, 1) 50%,
+		rgba(233, 233, 233, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e7e7e7",endColorstr="#e9e9e9",GradientType=1);
+}
+
+.about-section hr {
+	border: 1px solid lightgrey;
+}
+
+.about {
+	text-align: left;
+}
+
+.about p {
+	text-indent: 40px;
 }

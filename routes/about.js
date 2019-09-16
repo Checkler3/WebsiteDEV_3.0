@@ -3,12 +3,7 @@ const router = express.Router();
 
 // Route to display index page
 router.get('/', async (req, res) => {
-	try {
-		res.render('index', { title: 'Corey Heckler - Home' });
-	} catch (error) {
-		console.log(error)
-	}
-	
+	res.render('about/index', { title: 'Corey Heckler - About' });
 });
 
 module.exports = router;
