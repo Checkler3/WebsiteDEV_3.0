@@ -6,7 +6,6 @@ body {
 	height: 100vh;
 	background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 	background-attachment: fixed;
-	font-family: 'Nunito Sans', sans-serif;
 }
 
 hr {
@@ -15,7 +14,7 @@ hr {
 
 .content {
 	position: relative;
-	top: 5rem;
+	top: 10rem;
 	max-width: 500px;
 	text-align: center;
 	margin: auto;
