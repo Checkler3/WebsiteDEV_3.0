@@ -4,7 +4,8 @@ h1 {
 
 body {
   height: 100vh;
-  background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#e3ffe7), to(#d9e7ff));
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
   background-attachment: fixed;
 }
 
@@ -18,6 +19,7 @@ hr {
   max-width: 500px;
   text-align: center;
   margin: auto;
+  margin-bottom: 200px;
   padding: 20px;
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
