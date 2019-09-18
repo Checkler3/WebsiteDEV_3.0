@@ -7,6 +7,7 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#e3ffe7), to(#d9e7ff));
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
   background-attachment: fixed;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 hr {
@@ -15,7 +16,7 @@ hr {
 
 .content {
   position: relative;
-  top: 10rem;
+  top: 5rem;
   max-width: 500px;
   text-align: center;
   margin: auto;
