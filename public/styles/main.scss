@@ -1,5 +1,17 @@
+@import './components/nav.scss';
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
 h1 {
 	color: #483d8b;
+}
+
+h4 {
+	margin-bottom: 0rem;
 }
 
 body {
@@ -14,6 +26,7 @@ hr {
 }
 
 .content {
+	z-index: -1;
 	position: relative;
 	top: 5rem;
 	max-width: 500px;
@@ -123,8 +136,9 @@ hr {
 }
 
 .about-maincontent {
+	z-index: -1;
 	position: relative;
-	top: 10rem;
+	top: 5rem;
 	max-width: 800px;
 	text-align: center;
 	margin: auto;
