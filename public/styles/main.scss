@@ -1,4 +1,67 @@
+/* Color Theme Swatches in Hex */
+.Semper-1-hex {
+	color: #3c038c;
+}
+.Semper-2-hex {
+	color: #7d60a6;
+}
+.Semper-3-hex {
+	color: #1b0273;
+}
+.Semper-4-hex {
+	color: #d9b95b;
+}
+.Semper-5-hex {
+	color: #bf9663;
+}
+
+/* Color Theme Swatches in RGBA */
+.Semper-1-rgba {
+	color: rgba(60, 2, 140, 1);
+}
+.Semper-2-rgba {
+	color: rgba(125, 96, 165, 1);
+}
+.Semper-3-rgba {
+	color: rgba(26, 2, 114, 1);
+}
+.Semper-4-rgba {
+	color: rgba(216, 185, 91, 1);
+}
+.Semper-5-rgba {
+	color: rgba(191, 149, 99, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.Semper-1-hsla {
+	color: hsla(264, 96, 28, 1);
+}
+.Semper-2-hsla {
+	color: hsla(264, 28, 51, 1);
+}
+.Semper-3-hsla {
+	color: hsla(253, 96, 22, 1);
+}
+.Semper-4-hsla {
+	color: hsla(45, 62, 60, 1);
+}
+.Semper-5-hsla {
+	color: hsla(33, 41, 57, 1);
+}
+
+@font-face {
+	font-family: hey_august;
+	src: url('Hey August.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
 @import './components/nav.scss';
+@import './components/fonts.scss';
+
+.nav-logo h4 {
+	font-family: 'hey_august', sans-serif;
+}
 
 * {
 	margin: 0px;
@@ -20,7 +83,8 @@ h4 {
 
 body {
 	height: 100vh;
-	background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+	background: whitesmoke;
+	// background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 	background-attachment: fixed;
 	font-family: 'Nunito Sans', sans-serif;
 }
