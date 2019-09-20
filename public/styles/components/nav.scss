@@ -1,14 +1,14 @@
 nav {
+	z-index: 0;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	min-height: 5vh;
-	background-color: #483d8b;
 	transform: all 1000ms ease;
 }
 
 .nav-logo {
-	color: whitesmoke;
+	color: black;
 }
 
 .nav-links {
@@ -21,7 +21,7 @@ nav {
 .nav-links a {
 	text-decoration: none;
 	letter-spacing: 2px;
-	color: whitesmoke;
+	color: black;
 }
 
 .nav-links li {
@@ -36,7 +36,7 @@ nav {
 .burger div {
 	width: 25px;
 	height: 3px;
-	background-color: whitesmoke;
+	background-color: black;
 	margin: 5px;
 	transition: all 300ms ease;
 }
@@ -53,20 +53,20 @@ nav {
 	}
 
 	nav {
+		z-index: 20;
 		position: fixed;
 		width: 100vw;
-		color: whitesmoke;
 	}
 
 	.nav-links {
 		font-size: 24px;
 		position: fixed;
 		right: 0px;
-		height: 95vh;
-		top: 5vh;
+		height: 100vh;
+		top: 0vh;
 		padding-bottom: 15rem;
-		background-color: #483d8b;
 		display: flex;
+		background-color: rgba(178, 161, 206, 0.3);
 		flex-direction: column;
 		align-items: center;
 		width: 50%;
@@ -75,7 +75,7 @@ nav {
 	}
 
 	.nav-links a {
-		color: whitesmoke;
+		color: black;
 	}
 
 	.nav-links li {
@@ -83,6 +83,7 @@ nav {
 	}
 
 	.burger {
+		align-items: center;
 		display: block;
 	}
 }

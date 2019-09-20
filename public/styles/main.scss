@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	overflow-y: scroll;
+}
+
 h1 {
 	color: #483d8b;
 }
@@ -26,13 +30,15 @@ hr {
 }
 
 .content {
-	z-index: -1;
 	position: relative;
 	top: 5rem;
 	max-width: 500px;
 	text-align: center;
 	margin: auto;
 	padding: 20px;
+
+	animation: contentFadeIn 1200ms;
+
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
 	background: rgb(231, 231, 231);
@@ -136,7 +142,7 @@ hr {
 }
 
 .about-maincontent {
-	z-index: -1;
+	z-index: 0;
 	position: relative;
 	top: 5rem;
 	max-width: 800px;
@@ -144,6 +150,9 @@ hr {
 	margin: auto;
 	margin-bottom: 200px;
 	padding: 20px;
+
+	animation: contentFadeIn 1200ms;
+
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
 	background: rgb(231, 231, 231);
@@ -178,4 +187,15 @@ hr {
 
 .about p {
 	text-indent: 40px;
+}
+
+@keyframes contentFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(75px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
