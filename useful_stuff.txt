@@ -1,0 +1,1 @@
+npm i bcryptjs passport mongoose passport passport-local connect-flash express-session 

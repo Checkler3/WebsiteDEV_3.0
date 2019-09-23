@@ -1,12 +1,13 @@
 footer {
-  position: fixed;
-  left: 0;
+  position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
-  background-color: whitesmoke;
+  height: 10rem;
+  background-color: #e0e0e0;
   color: black;
   text-align: center;
-  padding: 50px;
+  padding: 25px;
 }
 
 footer li {
@@ -22,5 +23,35 @@ footer li {
   text-align: left;
   width: 200px;
   margin: 0 auto;
+}
+
+.contact-info h1 {
+  font-size: 24px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+}
+
+.contact-info a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #483d8b;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.contact-info a:hover:after {
+  width: 100%;
+  left: 0;
 }
 /*# sourceMappingURL=footer.css.map */
