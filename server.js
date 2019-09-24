@@ -34,5 +34,5 @@ app.use('*', errorRouter);
 // });
 
 // Start server
-const port = process.env.port || 4000;
+const port = process.env.port || 3000;
 app.listen(port, () => console.log(`Server started on port ${port}`));
