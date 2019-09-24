@@ -9,6 +9,7 @@ nav {
 
 .login-register {
 	font-size: 12px;
+	padding-left: 10px;
 }
 
 .login-register a {
@@ -23,6 +24,29 @@ nav {
 .nav-logo a {
 	color: black;
 	text-decoration: none;
+}
+
+.nav-logo-container {
+	display: inline-block;
+	position: relative;
+}
+
+.nav-logo:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: gray;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+
+.nav-logo:hover:after {
+	width: 100%;
+	left: 0;
 }
 
 .nav-links {
@@ -45,13 +69,13 @@ nav {
 
 .nav-links a:after {
 	background: none repeat scroll 0 0 transparent;
-	top: 0;
+	bottom: 0;
 	content: '';
 	display: block;
 	height: 2px;
 	left: 50%;
 	position: absolute;
-	background: #483d8b;
+	background: gray;
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
 	width: 0;
 }
@@ -82,7 +106,7 @@ nav {
 .vertical-line {
 	width: 2px;
 	height: 25px;
-	background-color: #483d8b;
+	background-color: gray;
 	margin: 5px;
 	vertical-align: baseline;
 }

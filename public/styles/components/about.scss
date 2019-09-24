@@ -1,0 +1,38 @@
+.about-maincontent {
+	z-index: 0;
+	position: relative;
+	top: 5rem;
+	max-width: 800px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 200px;
+	padding: 20px;
+
+	animation: contentFadeIn 1200ms;
+
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+
+.about-section hr {
+	border: 1px solid lightgrey;
+}
+
+.about {
+	text-align: left;
+}
+
+.about p {
+	text-indent: 40px;
+}
+
+@keyframes contentFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(75px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}

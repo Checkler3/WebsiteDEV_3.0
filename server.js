@@ -5,6 +5,7 @@ const path = require('path');
 const indexRouter = require('./routes/index');
 const aboutRouter = require('./routes/about');
 const projectRouter = require('./routes/projects');
+const errorRouter = require('./routes/error');
 
 // Initialize App
 const app = express();
@@ -24,6 +25,13 @@ app.use(express.static('public'));
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/projects', projectRouter);
+
+// 404 Route
+// ==== Must be last router listed ====
+app.use('*', errorRouter);
+// app.get('*', function(req, res) {
+// 	res.render('/404', errorRouter);
+// });
 
 // Start server
 const port = process.env.port || 4000;

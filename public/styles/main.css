@@ -15,6 +15,7 @@ nav {
 
 .login-register {
   font-size: 12px;
+  padding-left: 10px;
 }
 
 .login-register a {
@@ -29,6 +30,30 @@ nav {
 .nav-logo a {
   color: black;
   text-decoration: none;
+}
+
+.nav-logo-container {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-logo:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: gray;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-logo:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .nav-links {
@@ -54,13 +79,13 @@ nav {
 
 .nav-links a:after {
   background: none repeat scroll 0 0 transparent;
-  top: 0;
+  bottom: 0;
   content: '';
   display: block;
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #483d8b;
+  background: gray;
   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
@@ -83,7 +108,7 @@ nav {
 .vertical-line {
   width: 2px;
   height: 25px;
-  background-color: #483d8b;
+  background-color: gray;
   margin: 5px;
   vertical-align: baseline;
 }
@@ -234,8 +259,8 @@ footer {
   left: 0;
   width: 100%;
   height: 10rem;
-  background-color: #e0e0e0;
-  color: black;
+  background-color: rgba(78, 78, 78, 0.555);
+  color: whitesmoke;
   text-align: center;
   padding: 25px;
 }
@@ -261,7 +286,7 @@ footer li {
 
 .contact-info a {
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
   display: inline-block;
   position: relative;
 }
@@ -274,7 +299,7 @@ footer li {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #483d8b;
+  background: whitesmoke;
   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
@@ -283,6 +308,117 @@ footer li {
 .contact-info a:hover:after {
   width: 100%;
   left: 0;
+}
+
+.about-maincontent {
+  z-index: 0;
+  position: relative;
+  top: 5rem;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 200px;
+  padding: 20px;
+  -webkit-animation: contentFadeIn 1200ms;
+          animation: contentFadeIn 1200ms;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.about-section hr {
+  border: 1px solid lightgrey;
+}
+
+.about {
+  text-align: left;
+}
+
+.about p {
+  text-indent: 40px;
+}
+
+@-webkit-keyframes contentFadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(75px);
+            transform: translateY(75px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes contentFadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(75px);
+            transform: translateY(75px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.notfound-container {
+  position: relative;
+  top: 5rem;
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 200px;
+  padding: 20px;
+  -webkit-animation: errorShake 250ms;
+          animation: errorShake 250ms;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.notfound-container h2 {
+  color: gray;
+}
+
+@-webkit-keyframes errorShake {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  33% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  66% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes errorShake {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  33% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  66% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 * {
@@ -298,7 +434,7 @@ footer li {
 }
 
 .page-content {
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
 }
 
 html {
@@ -318,6 +454,15 @@ body {
   background: whitesmoke;
   background-attachment: fixed;
   font-family: 'Nunito Sans', sans-serif;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e8fff8+100 */
+  background: white;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, white 0%, #e8fff8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8fff8',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
 }
 
 hr {
@@ -405,47 +550,6 @@ hr {
 
 .resume {
   background: whitesmoke;
-}
-
-.about-maincontent {
-  z-index: 0;
-  position: relative;
-  top: 5rem;
-  max-width: 800px;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 200px;
-  padding: 20px;
-  -webkit-animation: contentFadeIn 1200ms;
-          animation: contentFadeIn 1200ms;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
-}
-
-.about-section hr {
-  border: 1px solid lightgrey;
-}
-
-.about {
-  text-align: left;
-}
-
-.about p {
-  text-indent: 40px;
-}
-
-@-webkit-keyframes contentFadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(75px);
-            transform: translateY(75px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
 }
 
 @keyframes contentFadeIn {

@@ -1,5 +1,7 @@
 @import './components/nav.scss';
 @import './components/footer.scss';
+@import './components/about.scss';
+@import './components/404.scss';
 
 * {
 	margin: 0px;
@@ -13,7 +15,7 @@
 }
 
 .page-content {
-	padding-bottom: 10rem;
+	padding-bottom: 8rem;
 }
 
 html {
@@ -33,6 +35,24 @@ body {
 	background: whitesmoke;
 	background-attachment: fixed;
 	font-family: 'Nunito Sans', sans-serif;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e8fff8+100 */
+	background: rgb(255, 255, 255); /* Old browsers */
+	background: -moz-linear-gradient(
+		-45deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(232, 255, 248, 1) 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		-45deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(232, 255, 248, 1) 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(232, 255, 248, 1) 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8fff8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 hr {
@@ -108,34 +128,6 @@ hr {
 
 .resume {
 	background: whitesmoke;
-}
-
-.about-maincontent {
-	z-index: 0;
-	position: relative;
-	top: 5rem;
-	max-width: 800px;
-	text-align: center;
-	margin: auto;
-	margin-bottom: 200px;
-	padding: 20px;
-
-	animation: contentFadeIn 1200ms;
-
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	border-radius: 5px;
-}
-
-.about-section hr {
-	border: 1px solid lightgrey;
-}
-
-.about {
-	text-align: left;
-}
-
-.about p {
-	text-indent: 40px;
 }
 
 @keyframes contentFadeIn {
