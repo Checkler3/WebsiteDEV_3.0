@@ -1,0 +1,107 @@
+hr {
+	border: 1px solid #483d8b;
+}
+
+.content {
+	position: relative;
+	top: 5rem;
+	max-width: 550px;
+	text-align: left;
+	margin: auto;
+	margin-bottom: 200px;
+	padding: 20px;
+	animation: contentFadeIn 1200ms;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+
+.home-description {
+	padding-top: 25px;
+}
+
+.home-about-link {
+	color: gray;
+	font-size: 16px;
+}
+
+.home-about-link:hover {
+	color: black;
+}
+
+.home-footer h4 {
+	font-size: 20px;
+}
+
+.title {
+	padding: 20px;
+}
+
+.pagelinks {
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.links {
+	width: 75%;
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+.pagelink {
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+.github {
+	font-size: 50px;
+}
+
+.linkedin {
+	font-size: 50px;
+}
+
+.email {
+	font-size: 50px;
+}
+
+.btn-icon {
+	transition: color 50ms ease-in-out;
+	color: #999999;
+}
+
+.btn-icon:hover {
+	color: #483d8b;
+}
+
+.btn {
+	color: black;
+	background-color: whitesmoke;
+	transition: color 50ms ease-in-out;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover {
+	background-color: #483d8b;
+	color: white;
+}
+
+.resume {
+	font-size: 14px;
+	color: gray;
+}
+
+.resume:hover {
+	color: black;
+}
+
+@keyframes contentFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(75px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}

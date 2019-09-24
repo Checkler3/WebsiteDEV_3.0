@@ -1,6 +1,7 @@
 @import 'components/_nav.scss';
-@import 'components/_footer.scss';
+@import 'pages/_home.scss';
 @import 'pages/_about.scss';
+@import 'components/_footer.scss';
 @import 'pages/_404.scss';
 
 * {
@@ -12,10 +13,6 @@
 .page-container {
 	position: relative;
 	min-height: 100vh;
-}
-
-.page-content {
-	padding-bottom: 8rem;
 }
 
 html {
@@ -30,113 +27,36 @@ h4 {
 	margin-bottom: 0rem;
 }
 
+.gray-hr {
+	border: 1px solid gray;
+}
+
+.text-highlight {
+	color: indigo;
+	font-weight: 600;
+}
+
 body {
 	height: 100vh;
 	background: whitesmoke;
 	background-attachment: fixed;
 	font-family: 'Nunito Sans', sans-serif;
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e8fff8+100 */
-	background: rgb(255, 255, 255); /* Old browsers */
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+21,e2fff5+100 */
+	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(
 		-45deg,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(232, 255, 248, 1) 100%
+		#ffffff 21%,
+		#e2fff5 100%
 	); /* FF3.6-15 */
 	background: -webkit-linear-gradient(
 		-45deg,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(232, 255, 248, 1) 100%
+		#ffffff 21%,
+		#e2fff5 100%
 	); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(
 		135deg,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(232, 255, 248, 1) 100%
+		#ffffff 21%,
+		#e2fff5 100%
 	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8fff8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
-hr {
-	border: 1px solid #483d8b;
-}
-
-.content {
-	position: relative;
-	top: 5rem;
-	max-width: 500px;
-	text-align: center;
-	margin: auto;
-	margin-bottom: 200px;
-	padding: 20px;
-	animation: contentFadeIn 1200ms;
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	border-radius: 5px;
-}
-
-.title {
-	padding: 20px;
-}
-
-.pagelinks {
-	padding: 10px;
-	display: flex;
-	justify-content: space-around;
-}
-
-.links {
-	width: 75%;
-	display: flex;
-	justify-content: space-around;
-	padding: 10px;
-}
-
-.pagelink {
-	border: 1px solid gray;
-	border-radius: 2px;
-}
-.github {
-	font-size: 50px;
-}
-
-.linkedin {
-	font-size: 50px;
-}
-
-.email {
-	font-size: 50px;
-}
-
-.btn-icon {
-	transition: color 50ms ease-in-out;
-	color: #999999;
-}
-
-.btn-icon:hover {
-	color: #483d8b;
-}
-
-.btn {
-	color: black;
-	background-color: whitesmoke;
-	transition: color 50ms ease-in-out;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
-}
-
-.btn:hover {
-	background-color: #483d8b;
-	color: white;
-}
-
-.resume {
-	background: whitesmoke;
-}
-
-@keyframes contentFadeIn {
-	from {
-		opacity: 0;
-		transform: translateY(75px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0px);
-	}
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2fff5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
