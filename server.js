@@ -6,6 +6,7 @@ const indexRouter = require('./routes/index');
 const aboutRouter = require('./routes/about');
 const projectRouter = require('./routes/projects');
 const errorRouter = require('./routes/error');
+const loginRouter = require('./routes/login');
 
 // Initialize App
 const app = express();
@@ -25,6 +26,7 @@ app.use(express.static('public'));
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/projects', projectRouter);
+app.use('/login', loginRouter);
 
 // 404 Route
 // ==== Must be last router listed ====

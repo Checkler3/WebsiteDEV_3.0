@@ -15,6 +15,11 @@
 	color: gray;
 }
 
+.notfound-container a {
+	color: gray;
+	font-size: 12px;
+}
+
 @keyframes errorShake {
 	0% {
 		transform: translateX(-50px);
