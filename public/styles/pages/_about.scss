@@ -2,16 +2,26 @@
 	z-index: 0;
 	position: relative;
 	top: 5rem;
-	max-width: 800px;
+	max-width: 850px;
 	text-align: center;
 	margin: auto;
 	margin-bottom: 200px;
 	padding: 20px;
-
 	animation: contentFadeIn 1200ms;
-
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
+}
+
+.about-header {
+	display: flex;
+}
+
+.about-header-description {
+	text-align: left;
+}
+
+.about-section {
+	padding: 20px;
 }
 
 .about-section hr {

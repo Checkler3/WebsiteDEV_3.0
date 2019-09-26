@@ -260,7 +260,7 @@ hr {
 .content {
   position: relative;
   top: 5rem;
-  max-width: 550px;
+  max-width: 800px;
   text-align: left;
   margin: auto;
   margin-bottom: 200px;
@@ -278,7 +278,7 @@ hr {
 
 .home-about-link {
   color: gray;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .home-about-link:hover {
@@ -291,6 +291,10 @@ hr {
 
 .title {
   padding: 20px;
+}
+
+.title a {
+  font-size: 14px;
 }
 
 .pagelinks {
@@ -392,7 +396,7 @@ hr {
   z-index: 0;
   position: relative;
   top: 5rem;
-  max-width: 800px;
+  max-width: 850px;
   text-align: center;
   margin: auto;
   margin-bottom: 200px;
@@ -402,6 +406,20 @@ hr {
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
+}
+
+.about-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-header-description {
+  text-align: left;
+}
+
+.about-section {
+  padding: 20px;
 }
 
 .about-section hr {
@@ -596,6 +614,73 @@ input[type='password'] {
           box-sizing: border-box;
 }
 
+.projects-maincontent {
+  position: relative;
+  top: 5rem;
+  max-width: 850px;
+  text-align: left;
+  margin: auto;
+  margin-bottom: 200px;
+  padding: 20px;
+  -webkit-animation: contentFadeIn 1200ms;
+          animation: contentFadeIn 1200ms;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.project-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 90%;
+  height: 225px;
+  padding: 20px;
+  margin: 20px auto;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: whitesmoke;
+}
+
+.project-card-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.javascript-icon {
+  color: #f0db4f;
+}
+
+.html5-icon {
+  color: orange;
+}
+
+.css3-icon {
+  color: blue;
+}
+
+.node-icon {
+  color: green;
+}
+
+.express-icon {
+  font-size: 12px;
+}
+
+.mongodb-icon {
+  color: green;
+  font-size: 12px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -606,10 +691,6 @@ input[type='password'] {
 .page-container {
   position: relative;
   min-height: 100vh;
-}
-
-html {
-  overflow-y: hidden;
 }
 
 h1 {
@@ -631,17 +712,17 @@ h4 {
 
 body {
   height: 100vh;
-  background: whitesmoke;
-  background-attachment: fixed;
   font-family: 'Nunito Sans', sans-serif;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+21,e2fff5+100 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+18,ffffff+18,d6d6ff+100 */
   background: #ffffff;
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #ffffff 21%, #e2fff5 100%);
+  background: linear-gradient(135deg, #ffffff 18%, #ffffff 18%, #d6d6ff 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2fff5',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6ff',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 /*# sourceMappingURL=main.css.map */

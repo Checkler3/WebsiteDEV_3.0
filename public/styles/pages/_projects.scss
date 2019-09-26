@@ -1,0 +1,55 @@
+.projects-maincontent {
+	position: relative;
+	top: 5rem;
+	max-width: 850px;
+	text-align: left;
+	margin: auto;
+	margin-bottom: 200px;
+	padding: 20px;
+	animation: contentFadeIn 1200ms;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+
+.project-card {
+	display: flex;
+	box-sizing: border-box;
+	width: 90%;
+	height: 225px;
+	padding: 20px;
+	margin: 20px auto;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background: whitesmoke;
+}
+
+.project-card-description {
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.javascript-icon {
+	color: #f0db4f;
+}
+
+.html5-icon {
+	color: orange;
+}
+
+.css3-icon {
+	color: blue;
+}
+
+.node-icon {
+	color: green;
+}
+
+.express-icon {
+	font-size: 12px;
+}
+
+.mongodb-icon {
+	color: green;
+	font-size: 12px;
+}
