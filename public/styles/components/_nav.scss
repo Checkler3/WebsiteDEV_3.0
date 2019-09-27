@@ -16,6 +16,12 @@ nav {
 	color: gray;
 }
 
+.login-reister::before {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f0e7';
+}
+
 .nav-logo h4 {
 	font-family: 'Amatic SC', cursive;
 	font-size: 48px;

@@ -1,1 +1,30 @@
-<h1>ISS-Tracker</h1>
+<div class="header">
+	<!-- Title -->
+	<h1>Where is the ISS?</h1>
+</div>
+
+<!-- Information -->
+<div class="content-header">
+	<!-- Write latitude ,longitude ,and altitude to page-->
+	<p>Latitude: <span id="lat"></span>°</p>
+	<p>Longitude: <span id="lon"></span>°</p>
+	<p>Altitude: <span id="alt"></span> miles</p>
+	<p>Velocity: <span id="vel"></span> mph</p>
+
+	<!-- Button for centering view on ISS on map-->
+	Center ISS to View: <input type="checkbox" id="center" />
+</div>
+
+<div class="map">
+	<!-- Where the map will be -->
+	<div id="issMap"></div>
+
+	<!-- <div class="video">
+		<iframe
+			width="420"
+			height="315"
+			src="https://www.youtube.com/embed/4993sBLAzGA?autoplay=0"
+		>
+		</iframe>
+	</div> -->
+</div>
