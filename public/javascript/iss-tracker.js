@@ -19,7 +19,7 @@ const issIcon = L.icon({
 //Add Icon to Map
 const marker = L.marker([0, 0], { icon: issIcon }).addTo(mymap);
 
-//Initialize checkbox to a variable
+//Grab checkbox
 const checkBox = document.getElementById('center');
 
 //First time variable
@@ -30,6 +30,7 @@ async function getData() {
 	const response = await fetch(apiUrl);
 	const data = await response.json();
 	const { latitude, longitude, altitude, velocity } = data;
+	// Enable dragging of element to set it to disable if checkbox is active
 
 	//Set maker to ISS Location
 	marker.setLatLng([latitude, longitude]);
@@ -38,7 +39,19 @@ async function getData() {
 		firstTime = false;
 	}
 
-	//Lock screen to ISS location
+	// Disables dragging on map if 'Center on Map' checkbox is checked
+	checkBox.addEventListener('click', function() {
+		if (checkBox.checked === true) {
+			mymap.dragging.disable();
+
+			// Set screen to Center immediately
+			mymap.setView([latitude, longitude]);
+		} else {
+			mymap.dragging.enable();
+		}
+	});
+
+	// Update screen when Lat and Long get updated
 	if (checkBox.checked == true) {
 		mymap.setView([latitude, longitude]);
 	}

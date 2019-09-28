@@ -1,0 +1,85 @@
+.tracker-wrapper {
+	position: relative;
+	top: 5rem;
+	max-width: 800px;
+	margin: 0 auto;
+	animation: fadeIn 1200ms;
+}
+
+.tracker-header {
+	text-align: center;
+}
+
+.tracker-info {
+	text-align: left;
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.top-tracker-info {
+	display: flex;
+	justify-content: space-around;
+}
+
+.bot-tracker-info {
+	display: flex;
+	justify-content: space-around;
+}
+
+.center-button {
+	display: inline-block;
+	text-align: center;
+}
+
+.tracker-content {
+	text-align: left;
+}
+
+#issMap {
+	height: 400px;
+	width: 600px;
+	margin: 0 auto;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tracker-map {
+	margin: 0 auto;
+	text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+	.tracker-info {
+		width: 90%;
+		white-space: nowrap;
+	}
+
+	#issMap {
+		height: 400px;
+		width: 100%;
+		margin: 0 auto;
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2),
+			0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.tracker-info {
+		width: 90%;
+		white-space: nowrap;
+		font-size: 12px;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

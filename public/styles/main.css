@@ -639,19 +639,45 @@ input[type='password'] {
   border-radius: 5px;
 }
 
+.project-card a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  text-decoration: none;
+  /* No underlines on the link */
+  color: black;
+}
+
 .project-card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 90%;
-  height: 225px;
+  height: 250px;
   padding: 20px;
   margin: 20px auto;
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background: whitesmoke;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.project-card:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .project-card-description {
@@ -691,6 +717,121 @@ input[type='password'] {
   font-size: 12px;
 }
 
+.tracker-wrapper {
+  position: relative;
+  top: 5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  -webkit-animation: fadeIn 1200ms;
+          animation: fadeIn 1200ms;
+}
+
+.tracker-header {
+  text-align: center;
+}
+
+.tracker-info {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.top-tracker-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.bot-tracker-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.center-button {
+  display: inline-block;
+  text-align: center;
+}
+
+.tracker-content {
+  text-align: left;
+}
+
+#issMap {
+  height: 400px;
+  width: 600px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tracker-map {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .tracker-info {
+    width: 90%;
+    white-space: nowrap;
+  }
+  #issMap {
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .tracker-info {
+    width: 90%;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -701,6 +842,17 @@ input[type='password'] {
 .page-container {
   position: relative;
   min-height: 100vh;
+}
+
+html {
+  overflow: auto;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+  }
 }
 
 h1 {

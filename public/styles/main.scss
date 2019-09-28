@@ -5,6 +5,7 @@
 @import 'pages/_404.scss';
 @import 'pages/_login.scss';
 @import 'pages/_projects.scss';
+@import 'components/_iss-tracker.scss';
 
 * {
 	margin: 0px;
@@ -18,7 +19,14 @@
 }
 
 html {
-	// overflow-y: hidden;
+	overflow: auto;
+}
+
+@media screen and (min-width: 768px) {
+	html {
+		margin-left: calc(100vw - 100%);
+		margin-right: 0;
+	}
 }
 
 h1 {
