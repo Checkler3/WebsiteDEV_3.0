@@ -1,0 +1,20 @@
+.btn-icon {
+	transition: color 50ms ease-in-out;
+	color: $main-text-color;
+}
+
+.btn-icon:hover {
+	color: $main-accent-color;
+}
+
+.btn {
+	color: black;
+	background-color: whitesmoke;
+	transition: color 50ms ease-in-out;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover {
+	background-color: $main-accent-color;
+	color: $main-text-color;
+}

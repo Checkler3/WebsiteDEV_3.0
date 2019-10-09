@@ -1,76 +1,15 @@
+@import 'utilities/_variables.scss';
+@import 'utilities/_buttons.scss';
+
+@import 'layout/_body.scss';
+
+@import 'components/_container.scss';
 @import 'components/_nav.scss';
+@import 'components/_footer.scss';
+@import 'components/_iss-tracker.scss';
+
 @import 'pages/_home.scss';
 @import 'pages/_about.scss';
-@import 'components/_footer.scss';
 @import 'pages/_404.scss';
 @import 'pages/_login.scss';
 @import 'pages/_projects.scss';
-@import 'components/_iss-tracker.scss';
-
-* {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-}
-
-.page-container {
-	position: relative;
-	min-height: 100vh;
-}
-
-html {
-	overflow: auto;
-}
-
-@media screen and (min-width: 768px) {
-	html {
-		margin-left: calc(100vw - 100%);
-		margin-right: 0;
-	}
-}
-
-h1 {
-	color: indigo;
-}
-
-h4 {
-	margin-bottom: 0rem;
-}
-
-.gray-hr {
-	border: 1px solid gray;
-}
-
-.text-highlight {
-	color: indigo;
-	font-weight: 600;
-}
-
-body {
-	height: 100vh;
-	font-family: 'Nunito Sans', sans-serif;
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+18,ffffff+18,d6d6ff+100 */
-	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(
-		-45deg,
-		#ffffff 18%,
-		#ffffff 18%,
-		#d6d6ff 100%
-	); /* FF3.6-15 */
-	background: -webkit-linear-gradient(
-		-45deg,
-		#ffffff 18%,
-		#ffffff 18%,
-		#d6d6ff 100%
-	); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(
-		135deg,
-		#ffffff 18%,
-		#ffffff 18%,
-		#d6d6ff 100%
-	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}

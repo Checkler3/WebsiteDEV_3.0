@@ -1,7 +1,8 @@
 .projects-maincontent {
+	color: $main-text-color;
 	position: relative;
-	top: 5rem;
-	max-width: 850px;
+	top: 5em;
+	max-width: 900px;
 	text-align: left;
 	margin: auto;
 	margin-bottom: 200px;
@@ -9,6 +10,7 @@
 	animation: contentFadeIn 1200ms;
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
+	background: $content-background;
 }
 
 .project-card a {
@@ -19,7 +21,7 @@
 	left: 0;
 	z-index: 10;
 	text-decoration: none; /* No underlines on the link */
-	color: black;
+	color: $main-text-color;
 }
 
 .project-card {
@@ -31,7 +33,7 @@
 	padding: 20px;
 	margin: 20px auto;
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background: whitesmoke;
+	background: $second-accent-color;
 	transform: scale(1);
 	transition: transform 250ms ease-in-out;
 }

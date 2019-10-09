@@ -1,10 +1,6 @@
-hr {
-	border: 1px solid #483d8b;
-}
-
 .content {
 	position: relative;
-	top: 5rem;
+	top: 5em;
 	max-width: 800px;
 	text-align: left;
 	margin: auto;
@@ -13,22 +9,39 @@ hr {
 	animation: contentFadeIn 1200ms;
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
+	background: $content-background;
+}
+
+hr {
+	border: 1px solid $main-accent-color;
+}
+
+.text-highlight {
+	color: $main-accent-color;
+	font-weight: 600;
+}
+
+.gray-hr {
+	border: 1px solid $second-accent-color;
 }
 
 .home-description {
+	color: $main-text-color;
 	padding-top: 25px;
 }
 
-.home-about-link {
-	color: gray;
-	font-size: 14px;
+.home-about-link a {
+	color: $second-accent-color;
 }
 
 .home-about-link:hover {
-	color: black;
+	color: $main-accent-color;
+	text-decoration: underline;
+	text-decoration-color: $main-accent-color;
 }
 
 .home-footer h4 {
+	color: $main-text-color;
 	font-size: 20px;
 }
 
@@ -38,10 +51,21 @@ hr {
 
 .title {
 	padding: 20px;
+
+	h3 {
+		color: $main-text-color;
+	}
 }
 
 .title a {
 	font-size: 14px;
+	color: $second-accent-color;
+	text-decoration: none;
+}
+
+.title a:hover {
+	color: $main-accent-color;
+	text-decoration: underline;
 }
 
 .pagelinks {
@@ -55,12 +79,9 @@ hr {
 	display: flex;
 	justify-content: space-around;
 	padding: 10px;
+	color: $main-text-color;
 }
 
-.pagelink {
-	border: 1px solid gray;
-	border-radius: 2px;
-}
 .github {
 	font-size: 50px;
 }
@@ -73,34 +94,13 @@ hr {
 	font-size: 50px;
 }
 
-.btn-icon {
-	transition: color 50ms ease-in-out;
-	color: #999999;
-}
-
-.btn-icon:hover {
-	color: #483d8b;
-}
-
-.btn {
-	color: black;
-	background-color: whitesmoke;
-	transition: color 50ms ease-in-out;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
-}
-
-.btn:hover {
-	background-color: #483d8b;
-	color: white;
-}
-
 .resume {
 	font-size: 14px;
-	color: gray;
+	color: $second-accent-color;
 }
 
 .resume:hover {
-	color: black;
+	color: $main-accent-color;
 }
 
 @keyframes contentFadeIn {
