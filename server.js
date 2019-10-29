@@ -16,10 +16,10 @@ app.use(bodyParser.json());
 
 // Initialize ejs as view engine
 // Set 'public' folder for use in layouts
+app.use(expressLayouts);
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.set('layout', 'layouts/layout');
-app.use(expressLayouts);
 app.use(express.static('public'));
 
 // Initialize Routers
@@ -29,11 +29,8 @@ app.use('/projects', projectRouter);
 app.use('/login', loginRouter);
 
 // 404 Route
-// ==== Must be last router listed ====
+// !!====!! Must be last router listed !!====!!
 app.use('*', errorRouter);
-// app.get('*', function(req, res) {
-// 	res.render('/404', errorRouter);
-// });
 
 // Start server
 const port = process.env.port || 3000;

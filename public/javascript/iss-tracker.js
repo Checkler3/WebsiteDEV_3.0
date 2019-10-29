@@ -69,9 +69,9 @@ async function getData() {
 	const speed = mph.toFixed(2);
 	document.getElementById('vel').textContent = speed;
 
-	//Logs to latitude and longitude to the console
-	console.log(latitude);
-	console.log(longitude);
+	//Logs to latitude and longitude to the console for checking purposes
+	// console.log(latitude);
+	// console.log(longitude);
 }
 
 //Run getData as soon as page loads

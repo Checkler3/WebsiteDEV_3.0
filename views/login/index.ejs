@@ -1,20 +1,23 @@
 <div class="container login-form">
-	<h2>Behind the scenes</h2>
+	<h2>Login</h2>
 	<div class="inner-container login-inputs">
 		<form action="something" method="POST">
-			<label for="username"><i class="fas fa-portrait"></i></label>
+			<label for="username"><i class="fas fa-portrait"></i> Username</label>
 			<input
-				type="text"
-				placeholder="enter username"
+				type="name"
+				id="name"
 				name="username"
+				placeholder="username"
+				value="<%= typeof name != 'undefined' ? name: '' %>"
 				required
 			/>
 
-			<label for="password"><i class="fas fa-key"></i></label>
+			<label for="password"><i class="fas fa-key"></i> Password</label>
 			<input
 				type="password"
-				placeholder="enter password"
+				placeholder="password"
 				name="password"
+				value="<%= typeof name != 'undefined' ? password: '' %>"
 				required
 			/>
 
