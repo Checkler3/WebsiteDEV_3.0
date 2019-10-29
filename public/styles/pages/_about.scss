@@ -1,31 +1,42 @@
 .about-maincontent {
+	color: $main-text-color;
 	z-index: 0;
 	position: relative;
-	top: 5rem;
-	max-width: 850px;
-	text-align: center;
+	top: 5em;
+	max-width: 900px;
+	text-align: left;
 	margin: auto;
 	margin-bottom: 200px;
 	padding: 20px;
 	animation: contentFadeIn 1200ms;
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
+	background: $content-background;
 }
 
 .about-header {
 	display: flex;
 }
 
-.about-header-description {
-	text-align: left;
-}
+// .about-header-description {
+// 	text-align: left;
+// }
 
 .about-section {
 	padding: 20px;
-}
 
-.about-section hr {
-	border: 1px solid lightgrey;
+	hr {
+		border: 1px solid $second-accent-color;
+	}
+
+	a {
+		color: $main-accent-color;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
 }
 
 .about {

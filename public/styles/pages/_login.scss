@@ -2,7 +2,7 @@
 	position: relative;
 	top: 10rem;
 	max-width: 550px;
-	text-align: left;
+	text-align: center;
 	margin: auto;
 	margin-bottom: 200px;
 	padding: 20px;
@@ -21,7 +21,7 @@ input[type='password'] {
 	padding: 12px 20px;
 	margin: 8px 0;
 	display: inline-block;
-	border: 1px solid #ccc;
+	border: 1px solid $second-accent-color;
 	box-sizing: border-box;
 }
 

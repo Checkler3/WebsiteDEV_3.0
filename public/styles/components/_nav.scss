@@ -3,8 +3,12 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	padding: 10px;
 	min-height: 5vh;
 	transform: all 1000ms ease;
+	background: $comp-background;
+	border-bottom: 2px solid $main-accent-color;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .login-register {
@@ -13,7 +17,7 @@ nav {
 }
 
 .login-register a {
-	color: gray;
+	color: $second-accent-color;
 }
 
 .login-reister::before {
@@ -28,7 +32,7 @@ nav {
 }
 
 .nav-logo a {
-	color: black;
+	color: $main-text-color;
 	text-decoration: none;
 }
 
@@ -45,7 +49,7 @@ nav {
 	height: 2px;
 	left: 50%;
 	position: absolute;
-	background: gray;
+	background: $main-text-color;
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
 	width: 0;
 }
@@ -67,7 +71,7 @@ nav {
 .nav-links a {
 	text-decoration: none;
 	letter-spacing: 2px;
-	color: black;
+	color: $main-text-color;
 
 	display: inline-block;
 	position: relative;
@@ -81,7 +85,7 @@ nav {
 	height: 2px;
 	left: 50%;
 	position: absolute;
-	background: gray;
+	background: $main-text-color;
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
 	width: 0;
 }
@@ -112,7 +116,7 @@ nav {
 .vertical-line {
 	width: 2px;
 	height: 25px;
-	background-color: gray;
+	background-color: $main-accent-color;
 	margin: 5px;
 	vertical-align: baseline;
 }
@@ -120,7 +124,7 @@ nav {
 .burger div {
 	width: 25px;
 	height: 3px;
-	background-color: whitesmoke;
+	background-color: $main-text-color;
 	margin: 5px;
 	transition: all 300ms ease;
 }
@@ -139,8 +143,10 @@ nav {
 	nav {
 		z-index: 20;
 		position: fixed;
+		margin-bottom: 5vh;
 		width: 100vw;
-		background-color: rgba(125, 96, 165, 1);
+		background-color: $content-background;
+		height: 10vh;
 	}
 
 	.login-register {
@@ -156,10 +162,11 @@ nav {
 		position: fixed;
 		right: 0px;
 		height: 95vh;
-		top: 5vh;
+		top: 10vh;
 		padding-bottom: 15rem;
 		display: flex;
-		background-color: rgba(125, 96, 165, 0.6);
+		justify-content: space-evenly;
+		background-color: $content-background;
 		flex-direction: column;
 		align-items: center;
 		width: 50%;
